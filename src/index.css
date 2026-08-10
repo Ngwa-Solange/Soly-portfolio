@@ -1,0 +1,94 @@
+/* =========================
+   GLOBAL THEME
+========================= */
+
+:root {
+  --bg-color: #081120;
+  --section-bg: #0b172a;
+  --text-color: #ffffff;
+  --secondary-text: #cbd5e1;
+  --card-bg: rgba(11, 23, 42, 0.75);
+  --border-color: rgba(56, 189, 248, 0.15);
+  --primary-color: #2563eb;
+  --accent-color: #38bdf8;
+}
+
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+body.light-mode {
+  --bg-color: #f4f8fc;
+  --section-bg: #ffffff;
+  --text-color: #172033;
+  --secondary-text: #475569;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --border-color: rgba(37, 99, 235, 0.18);
+  --primary-color: #2563eb;
+  --accent-color: #0284c7;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: var(--bg-color);
+  color: var(--text-color);
+
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+  transition:
+    background 0.4s ease,
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+
+/* =========================
+   LIGHT MODE - GLOBAL
+========================= */
+
+body.light-mode {
+  background: #f4f8fc;
+  color: #172033;
+}
+
+body.light-mode main {
+  background: #f4f8fc;
+}
+
+body.light-mode section {
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}

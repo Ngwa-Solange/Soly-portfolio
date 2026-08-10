@@ -1,0 +1,303 @@
+/* ===========================
+   PROJECTS SECTION
+=========================== */
+
+#projects{
+    padding:100px 8%;
+    background:linear-gradient(
+        180deg,
+        #081120 0%,
+        #0d1728 100%
+    );
+    color:white;
+}
+
+.projects-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.projects-text{
+    max-width:800px;
+    margin:20px auto 60px;
+    text-align:center;
+    color:#cbd5e1;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:35px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.project-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(56,189,248,.15);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(12px);
+
+    transition:.35s ease;
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#38bdf8;
+
+    box-shadow:0 15px 35px rgba(56,189,248,.18);
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.project-image{
+
+    height:220px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+    font-weight:bold;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #38bdf8
+    );
+
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.project-content{
+
+    padding:30px;
+
+}
+
+.project-content h3{
+
+    color:#38bdf8;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.project-content p{
+
+    color:#d1d5db;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+   TECH STACK
+=========================== */
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+}
+
+.tech-stack span{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.project-links{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+}
+
+.project-links a{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    background:#1e293b;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.project-links a:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    #projects{
+
+        padding:80px 7%;
+
+    }
+
+    .projects-text{
+
+        font-size:16px;
+
+    }
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+.project-image{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+}
+
+.image-modal{
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.image-modal img{
+    width: 75vw;
+    max-width: 1300px;
+    height: auto;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 15px;
+
+}
+
+.image-modal span{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   LIGHT MODE - PROJECTS
+========================= */
+
+body.light-mode #projects {
+  background: #ffffff;
+  color: #172033;
+}
+
+body.light-mode #projects h2,
+body.light-mode #projects h3 {
+  color: #172033;
+}
+
+body.light-mode #projects p {
+  color: #475569;
+}
+
+body.light-mode #projects .project-card {
+  background: #f8fafc;
+  color: #172033;
+  border-color: rgba(37, 99, 235, 0.15);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+body.light-mode #projects .project-card h3 {
+  color: #172033;
+}
+
+body.light-mode #projects .project-card p {
+  color: #475569;
+}
+
+body.light-mode #projects .project-card a {
+  color: #2563eb;
+}

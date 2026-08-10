@@ -1,0 +1,153 @@
+/* ===========================
+   CONTACT SECTION
+=========================== */
+
+#contact{
+    padding:100px 8%;
+    background:linear-gradient(
+        180deg,
+        #081120 0%,
+        #0d1728 100%
+    );
+    color:white;
+}
+
+.contact-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.contact-text{
+    text-align:center;
+    color:#cbd5e1;
+    max-width:700px;
+    margin:20px auto 60px;
+    line-height:1.8;
+}
+
+.contact-content{
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:50px;
+}
+
+.contact-info h3{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin:18px 0;
+    color:#d1d5db;
+    font-size:18px;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:18px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(56,189,248,.2);
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:#38bdf8;
+
+}
+
+.contact-form button{
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:#38bdf8;
+
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:900px){
+
+    #contact{
+        padding:80px 7%;
+    }
+
+    .contact-content{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+/* =========================
+   LIGHT MODE - CONTACT
+========================= */
+
+body.light-mode #contact {
+  background: #ffffff;
+  color: #172033;
+}
+
+body.light-mode #contact h2,
+body.light-mode #contact h3 {
+  color: #172033;
+}
+
+body.light-mode #contact p {
+  color: #475569;
+}
+
+body.light-mode #contact input,
+body.light-mode #contact textarea {
+  background: #f8fafc;
+  color: #172033;
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+body.light-mode #contact input::placeholder,
+body.light-mode #contact textarea::placeholder {
+  color: #64748b;
+}
+
+body.light-mode #contact .contact-card,
+body.light-mode #contact .contact-box {
+  background: #f8fafc;
+  color: #172033;
+  border-color: rgba(37, 99, 235, 0.15);
+}
