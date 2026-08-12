@@ -22,7 +22,7 @@ import solyQuiz from "../assets/images/soly.png";
 import certificate1 from "../assets/images/certificate-1.PNG";
 import certificate2 from "../assets/images/certificate-2.jpg";
 import certificate3 from "../assets/images/certificate-3.jpg";
-import certificate4 from "../assets/images/certificate_4.jpg";
+import certificate4 from "../assets/images/certificate_4.JPG";
 
 
 import professional1 from "../assets/images/professional-1.jpg";
