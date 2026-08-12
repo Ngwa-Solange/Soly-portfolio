@@ -1,4 +1,4 @@
-import profile from "../assets/images/Solange.png";
+import profile from "../assets/images/solange.png";
 import { TypeAnimation } from "react-type-animation";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
