@@ -19,7 +19,7 @@ import healthcareAI from "../assets/images/health.png";
 import fireDetection from "../assets/images/fire.png";
 import solyQuiz from "../assets/images/soly.png";
 
-import certificate1 from "../assets/images/certificate-1.png";
+import certificate1 from "../assets/images/certificate-1.PNG";
 import certificate2 from "../assets/images/certificate-2.jpg";
 import certificate3 from "../assets/images/certificate-3.jpg";
 import certificate4 from "../assets/images/certificate_4.jpg";
